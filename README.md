@@ -1,7 +1,7 @@
 # Oculus Platform Helper
 ## Intro ##
 ### What is this? ###
-This is a package and workflow for Windows Unity developers that allows support for PC and Gear VR in a single Unity project. It isn't compatible with OSX due to the need for a batch file, but someone could add it pretty fast!
+This is a package and workflow for Unity developers that allows support for PC and Gear VR in a single Unity project.
 
 ### Why do I need something like this? ###
 The current Oculus SDKs cannot live together in a single project, but this package will flush and import the correct SDKs whenever you change platforms in Unity. Additionally, it will move any objects you have under the Oculus camera transforms into the correct place on the correct cameras and keep settings in sync between the two cameras.
