@@ -13,7 +13,7 @@ This has been tested on Windows with Unity 4.6, Oculus PC SDK 0.4.4, and Oculus 
 1. Download the mobile and PC Oculus SDKs from the Oculus Developer site, located here: https://developer.oculus.com/. This has been tested with PC SDK 0.4.4 and mobile SDK 0.4.2.
 2. Rename the PC SDK unitypackage file to "sdk-dk2.unitypackage" and place it in the root of your project directory (not in the Assets folder).
 3. Rename the mobile SDK unitypackage file to "sdk-gearvr.unitypackage" and place it in the root of your project directory (not in the Assets folder).
-4. Download the Oculus Platform Helper and copy the "Change Platform.bat" file into the root of your project directory.
+4. Download the Oculus Platform Helper and copy the "Change Platform.bat" (or .sh for OSX users) file into the root of your project directory.
 5. Install the TBOculusPlatformHelper.unitypackage into your project from within Unity.
 6. Move any non-Oculus plugins out of your main Assets/Plugins folder and into a subfolder, such as Assets/TButt/Plugins.
 7. Switch your Unity project platform to PC/Standalone.
@@ -24,7 +24,7 @@ You should use TBCameraRig in your scenes instead of the Oculus camera prefabs. 
 
 ## Changing Platforms ##
 1. Switch platforms from the Unity Build Settings menu as usual. After reimporting assets, Unity will close and save the current open scene as a backup to /Assets/PlatformChangeBackup (just in case you didn't save before you quit).
-2. Run the "Change Platform.bat" batch file in the project root. This will automate the process of flushing the old SDK, launching Unity, importing the correct SDK, and verifying your build settings are correct for your target platform (updating the physics timestep, etc).
+2. Run the "Change Platform.bat" batch file (or shell script for OSX users) in the project root. This will automate the process of flushing the old SDK, launching Unity, importing the correct SDK, and verifying your build settings are correct for your target platform (updating the physics timestep, etc).
 
 ### Known Issues ###
 On some machines, you may need to restart Unity again the normal way (by opening Unity, rather than using the batch file) after switching to a PC build.
