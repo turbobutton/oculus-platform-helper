@@ -15,9 +15,8 @@ This has been tested on Windows with Unity 4.6, Oculus PC SDK 0.4.4, and Oculus 
 3. Rename the mobile SDK unitypackage file to "sdk-gearvr.unitypackage" and place it in the root of your project directory (not in the Assets folder).
 4. Download the Oculus Platform Helper and copy the "Change Platform.bat" (or .sh for OSX users) file into the root of your project directory.
 5. Install the TBOculusPlatformHelper.unitypackage into your project from within Unity.
-6. Move any non-Oculus plugins out of your main Assets/Plugins folder and into a subfolder, such as Assets/TButt/Plugins.
-7. Switch your Unity project platform to PC/Standalone.
-8. Import the Oculus PC SDK unitypackage manually. You should only have to do this once.
+6. Switch your Unity project platform to PC/Standalone.
+7. Import the Oculus PC SDK unitypackage manually. You should only have to do this once.
 
 ## Using TBCameraRig ##
 You should use TBCameraRig in your scenes instead of the Oculus camera prefabs. The TBCameraRig has both of the Oculus camera prefabs (PC and mobile) nested underneath them, and chooses the correct one depending on which platform you're compiling for. If you have objects nested underneath the Oculus cameras, put them under TBLeft, TBCenter, or TBRight as appropriate.
