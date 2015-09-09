@@ -1,3 +1,6 @@
+## This package is no longer useful as of SDK 0.5.0 ##
+
+
 # Oculus Platform Helper
 ## Intro ##
 ### What is this? ###
